@@ -1,6 +1,5 @@
-#include "tm4c123gh6pm.h"
-
-
+//. For example, the memory address for bit 7 (corresponding to the RS pin) is 0x40004200, 
+//which is the base address plus an offset of 0x200 (since each bit in the register occupies 4 bytes or 32 bits).
 #define LCD_RS (*((volatile unsigned long *)0x40004200))    //PA.7 for register select pin
 #define LCD_EN  (*((volatile unsigned long *)0x40004100))   //PA.6 for enable pin
 #define LCD_RW  (*((volatile unsigned long *)0x40004080))   //PA.5 for rw pin
